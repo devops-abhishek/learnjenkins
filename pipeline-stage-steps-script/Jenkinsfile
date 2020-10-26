@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+    stages{
+        stage("Print"){
+            steps{
+                script{
+					def name = "abhishek"
+					
+					if(name == "abhishek")
+						println("Correct")
+					else
+						println("On-Correct")
+					sleep 2
+					echo "end of script"
+				}
+            }
+        }
+    }
+}
