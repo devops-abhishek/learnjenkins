@@ -1,0 +1,15 @@
+pipeline{
+    agent {
+       node{
+           label "master"
+           customWorkspace "/tmp"
+       }
+    }
+    stages{
+        stage("Print"){
+            steps{
+                echo "Hello World"
+            }
+        }
+    }
+}
