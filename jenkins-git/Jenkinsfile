@@ -16,9 +16,9 @@ pipeline{
                 sh 'echo "Deploy Stage"'
             }
         }
-        stage('Sample'){
+        stage('Sample2'){
             steps{
-                sh 'echo "Sample Stage"'
+                sh 'echo "Sample2 Stage"'
             }
         }
     }
